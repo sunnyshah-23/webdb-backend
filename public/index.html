@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 0.2fr 0.5fr 0.4fr 1.2fr 0.6fr 0.6fr 0.5fr 0.05fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "nav nav nav nav"
+                "about about about about"
+                "education education education education "
+                "project project project project"
+                "skills skills skills skills"
+                "experience experience experience experience"
+                "blog blog blog blog "
+                "footer footer footer footer"
+            ;
+            overflow-x: hidden !important;
+        }
+
+        nav a {
+            color: #ffffff;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        nav {
+            overflow: hidden;
+            grid-area: nav;
+            justify-content: space-between;
+            display: flex;
+            background-color: #189AB4;
+            color: #ffffff;
+        }
+
+        .header1-block {
+            grid-area: header1-block;
+        }
+
+        .header1-links {
+            grid-area: header1-links;
+
+        }
+
+        #title img {
+            height: 50px;
+            width: 50px;
+        }
+
+        nav img {
+            height: 50px;
+            width: 50px;
+        }
+
+        #menu_links ul li {
+            padding: 10px;
+        }
+
+        #menu_links ul {
+            display: flex;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #about {
+            grid-area: about;
+            display: flex;
+            padding: 20px;
+            background-color: #189AB4;
+        }
+
+        #about img {
+            border-radius: 15px;
+        }
+
+        #about-content2 {
+            margin-left: 20px;
+        }
+
+        #education {
+            grid-area: education;
+        }
+
+        #education h2 {
+            text-align: center;
+            color: #05445E;
+        }
+
+        .school {
+            margin: auto;
+            width: 70%;
+            border: 1px solid black;
+            margin-top: 10px;
+            padding: 5px;
+            background-color: #F8F6F6;
+        }
+
+        .school h3 {
+            display: inline-block;
+        }
+
+        .school .grade {
+            float: right;
+        }
+
+        #project {
+            grid-area: project;
+            background-color: #f2f1f1;
+            text-align: center;
+
+        }
+
+        #project button {
+
+            padding: 15px;
+            background-color: transparent;
+            border-color: #179AB4 !important;
+
+            border-radius: 10px;
+        }
+
+        #project button:hover {
+            background-color: #179AB4;
+        }
+
+        #project h2 {
+            color: #05445E;
+            text-align: center;
+        }
+
+        #project .details {
+            display: flex;
+            justify-content: center;
+        }
+
+        #project .card {
+            margin-left: 20px;
+            height: 40%;
+            width: 40%;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            background-color: #F8F6F6;
+
+        }
+
+        #project .card-body {
+            background-color: #F8F6F6;
+
+        }
+
+        #project .card img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #project .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        #project .card-body {
+            padding: 2px 16px;
+        }
+
+        #skills {
+            grid-area: skills;
+
+        }
+
+        #skills .detail {
+            display: flex;
+        }
+
+        #skills #right img {
+            margin-left: 30% !important;
+        }
+
+        #skills #left {
+
+            width: 49%;
+        }
+
+
+        #skills h2 {
+            color: #05445E;
+            text-align: center;
+        }
+
+        #skills h3 {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        #skills span {
+            text-align: center;
+            width: 20%;
+            border: 1px solid #179AB4;
+            border-radius: 30px;
+            display: inline-block;
+            padding: 7px;
+        }
+
+        #skills span:hover {
+            background-color: #179AB4;
+            color: #ffffff;
+        }
+
+        #experience {
+            grid-area: experience;
+        }
+
+        #exp-detail {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* exp */
+        #experience {
+            background-color: #F2F1F1;
+        }
+
+        #experience h2 {
+            text-align: center;
+            padding-top: 20px;
+            color: #05445E;
+
+        }
+
+        .exp-content {
+            margin-top: 15px;
+            width: auto;
+            margin-left: 20%;
+
+
+        }
+
+        .exp-content .card {
+            border: 1px solid black;
+            transition: 0.3s;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        #experience img {
+            padding-left: 20px;
+            width: 500px;
+            height: 500px;
+            border-radius: 15px;
+        }
+
+        .card-header h3 {
+            padding: 10px;
+        }
+
+        .card-body p {
+            padding: 10px;
+        }
+
+        .card-header h3 {
+            display: inline-block;
+        }
+
+        .card-header #year {
+            float: right;
+
+        }
+
+        .exp-content .card-header {
+            background-color: #179AB4;
+        }
+
+        .exp-content .card {
+            margin-right: 10px;
+            background-color: #F8F6F6;
+        }
+
+        #blog {
+            grid-area: blog;
+            text-align: center;
+        }
+
+        #blog .content {
+            display: flex;
+            justify-content: center;
+        }
+
+        #blog h2 {
+            color: #05445E;
+
+        }
+
+        #blog .card {
+
+            width: 40%;
+            display: inline-block;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            background-color: #F8F6F6;
+            margin: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .footer-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #179AB4;
+            color: #ffffff;
+        }
+
+
+        footer #links {
+            float: right;
+        }
+
+
+
+        .social {
+            width: 50px;
+            height: 50px;
+        }
+
+        button {
+            width: 40%;
+            padding: 10px;
+            border: 1px solid 1166B1;
+            color: #1166B1;
+            background-color: #ffffff
+        }
+
+        button:hover {
+            color: #ffffff;
+            background-color: #1166B1;
+            transition: 0.2s;
+            border-color: #ffffff;
+
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .contact-details span {
+            margin-left: 10px;
+        }
+
+        nav {
+            background-color: #179AB4;
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .mainMenu {
+            display: flex;
+            list-style: none;
+        }
+
+        nav .mainMenu li a {
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            transition: 0.2s ease;
+        }
+
+        nav .mainMenu li a:hover {
+            background-color: #045D6E;
+        }
+
+        nav .openMenu {
+            font-size: 2rem;
+            margin: 20px;
+            display: none;
+            cursor: pointer;
+        }
+
+        nav .mainMenu .closeMenu,
+        .icons i {
+            font-size: 2rem;
+            display: none;
+            cursor: pointer;
+        }
+
+        .email1 {
+            display: flex;
+        }
+
+        .email1 p {
+            margin-left: 5px;
+        }
+
+        .phone1 {
+            display: flex;
+        }
+
+        nav .logo {
+            margin: 6px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        @media only screen and (max-width:500px) {
+            .container {
+                grid-template-rows: 0.08fr 0.1fr 0.2fr 0.3fr 0.6fr 1fr 0.6fr 0.4fr 0.05fr;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "nav"
+                    "about"
+                    "about"
+                    "education"
+                    "project"
+                    "skills"
+                    "experience"
+                    "blog"
+                    "footer"
+                ;
+                overflow-x: hidden;
+            }
+
+            #about {
+                flex-direction: column;
+            }
+
+            #about img {
+                height: 200px;
+                width: 300px;
+            }
+
+            #education .school {
+
+                width: 85%;
+                height: 30%;
+            }
+
+            .school h3 {
+                display: inline;
+            }
+
+            #project .details {
+                flex-direction: column;
+            }
+
+            #project .card {
+                margin: auto;
+                height: 40%;
+                width: 80%;
+                margin-top: 20px;
+
+
+            }
+
+            #skills .detail #left {
+                margin-left: 20%;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #skills .detail {
+
+                flex-direction: column;
+            }
+
+            #skills #right {
+                text-align: center;
+            }
+
+            #skills #right img {
+
+                height: 300px;
+                width: 200px;
+                margin-left: 0px !important;
+            }
+
+            #skills span {
+                margin-bottom: 5px;
+                width: 100px;
+                margin-left: 30px;
+                padding: 20px;
+                display: flex;
+            }
+
+            #exp-detail {
+                flex-direction: column;
+            }
+
+            #exp-image {
+                text-align: center;
+            }
+
+            #experience img {
+
+                width: 300px;
+                height: 300px;
+                border-radius: 15px;
+            }
+
+            .exp-content {
+
+                margin-left: 0px;
+            }
+
+            .exp-content .card {
+                margin: auto;
+                width: 80%;
+            }
+
+            .exp-right {
+                justify-content: center;
+            }
+
+            .exp-content .card-header {
+                height: 40%;
+            }
+
+            .card-header h3 {
+                display: flex;
+            }
+
+            .card-header #year {
+                float: none;
+            }
+
+            #blog .content {
+                flex-direction: column;
+            }
+
+            #blog .content .card {
+                margin: auto;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+
+            .content h3 {
+                text-align: center;
+            }
+
+            footer .footer-details {
+                text-align: center;
+                flex-direction: column;
+            }
+
+            .contact-details {
+                margin-bottom: 10px;
+
+            }
+
+
+            input {
+                width: 80%;
+            }
+
+            .email1 {
+                margin-left: 15%;
+                display: flex;
+            }
+
+            .email1 img {
+                height: 50px;
+                width: 50px;
+            }
+
+            .phone1 img {
+                height: 50px;
+                width: 30px;
+            }
+
+            .email1 p {
+                padding: 5px;
+            }
+
+            .phone1 {
+                margin-left: 15%;
+
+                display: flex;
+
+            }
+
+            .phone1 p {
+                padding: 5px;
+            }
+
+            .footer-details .content {
+                margin-top: 30px;
+            }
+
+            #skills #right img {
+                margin-bottom: 80px;
+            }
+
+            nav .mainMenu {
+                height: 100vh;
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+                z-index: 10;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: rgb(0, 0, 0);
+                transition: top 1s ease 0s;
+                display: none;
+            }
+
+            nav .mainMenu .closeMenu {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            nav .openMenu {
+                display: block;
+            }
+
+            nav .mainMenu li a:hover {
+                background: none;
+                color: rgb(255, 123, 0);
+            }
+
+            .icons i {
+                display: inline-block;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="https://github.com/sunnyshah-23/unhwebdev/blob/main/logo.jpeg?raw=true">
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+        <section id="about">
+
+            <div id="about-content1">
+                <img src="https://github.com/sunnyshah-23/unhwebdev/blob/main/about.jpeg?raw=true" />
+            </div>
+            <div id="about-content2">
+                <h2>Hi There,<br> I am Sunny Shah</h2>
+
+                <h3>Full Stack Developer</h3>
+                <p>Strong in offering software solution with more than 1 year of full stack development experience.
+                    Proficient in working with JavaScript, ReactJS, NodeJS along with few databases. Seeking to
+                    leverage
+                    skills and experience in software development role</p>
+            </div>
+
+
+        </section>
+        <section id="education">
+
+            <h2>Education</h2>
+            <div class="school">
+                <h3>MS in Computer Science | University of New Haven, CT, USA | 3.78/4</h3>
+                <h3 class="grade">May 2023</h3>
+            </div>
+            <div class="school">
+                <h3>BE in Computer Engineering | Mumbai University, India | 7.5/10</h3>
+                <h3 class="grade">Oct 2020</h3>
+            </div>
+
+        </section>
+        <section id="project">
+            <h2>Projects</h2>
+            <div class="details">
+                <div class="card">
+                    <img src="https://github.com/sunnyshah-23/unhwebdev/blob/main/crypto.png?raw=true">
+                    <div class="card-body">
+                        <h3>Crypto Hunter</h3>
+                        <p>Built a website that tracks Covid cases, recoveries, and fatalities throughout all nations
+                            worldwide
+                            with an integrated API to access Covid data and Reactjs visualisations.</p>
+                        <a href="https://crypto-hunter-f6008.web.app/"><button>Demo</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://github.com/sunnyshah-23/unhwebdev/blob/main/covid.png?raw=true">
+                    <div class="card-body">
+                        <h3>Covid19-Tracker</h3>
+                        <p>Built a website that tracks Covid cases, recoveries, and fatalities throughout all nations
+                            worldwide
+                            with an integrated API to access Covid data and Reactjs visualisations.</p>
+                        <a href="https://covid-19-tracker-c30e6.web.app/"><button>Demo</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="detail">
+                <div id="left">
+                    <div>
+                        <h3>Programming Languages:</h3>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                    </div>
+                    <div>
+                        <h3>Front End Technologies:</h3>
+                        <span>ReactJs</span>
+                        <span>Javascript</span>
+                        <span>HTML5</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>Material UI</span>
+                    </div>
+                    <div>
+                        <h3>Back End Technologies:</h3>
+                        <span>PHP</span>
+                        <span>Nodejs(Express)</span>
+                        <span>REST APIs</span>
+                    </div>
+                    <div>
+                        <h3>Databases:</h3>
+                        <span>Mysql</span>
+                        <span>Mssql</span>
+                        <span>MongoDb</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+                <div id="right">
+                    <img src="https://github.com/sunnyshah-23/unhwebdev/blob/main/skill.png?raw=true" />
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div id="exp-detail">
+                <div id="exp-image"><img src="https://github.com/sunnyshah-23/unhwebdev/blob/main/work.jpeg?raw=true">
+                </div>
+                <div class="exp-right">
+                    <div class="exp-content">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>NECS | Jr Web Developer</h3>
+                                <h3 id="year">May 2022 - Present</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Designed and developed UI for client websites leveraging HTML, CSS, Bootstrap, &
+                                    JavaScript which
+                                    raised the customer conversion rate by 15%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Spectramed Global Heathcare | Jr Sofwtare Developer</h3>
+                                <h3 id="year">Oct 2020 - June 2021</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Developed and implemented a dynamic and interactive e-commerce website deploying
+                                    React
+                                    and
+                                    NodeJs, eventually achieving 20% increase in efficiency</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Web 3.0</h3>
+                        <p>Web 3.0, also known as Semantic Web or read-write-execute, is the era (from 2010 onwards)
+                            that
+                            alludes to the web's future. Artificial Intelligence (AI) and Machine Learning (ML)
+                            enable
+                            computers
+                            to analyze data in the same way that humans do, which aids in the intelligent generation
+                            and
+                            distribution of valuable content according to a user's specific needs.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Cryptocurrency</h3>
+                        <p>Cryptocurrency is a digital currency that doesn't rely on central banks or trusted third
+                            parties to
+                            verify transactions and create new currency units. Instead, it uses cryptography to
+                            confirm
+                            transactions on a publicly distributed ledger called a blockchain.The validity of
+                            cryptocurrency is
+                            established and maintained without any involvement by the world's central banks. </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <div class="content">
+                <h3>Sunny Shah</h3>
+            </div>
+            <div class="footer-details">
+                <div class="contact-details">
+                    <div class="email1">
+                        <img src="https://github.com/sunnyshah-23/unhwebdev/blob/main/email-3026.png?raw=true"
+                            class="email">
+                        <p>sshah15@unh.newhaven.edu</p>
+                    </div>
+
+                    <div class="phone1">
+                        <img src="https://github.com/sunnyshah-23/unhwebdev/blob/main/phone-519.png?raw=true">
+                        <p>+1 747-876-2930</p>
+                    </div>
+
+                </div>
+                <div class="connect">
+                    <h3>Stay Connected</h3>
+                    <input type="text" placeholder="Enter Your Email Address" />
+                    <button>Submit</button>
+                </div>
+
+                <div class="content" id="links">
+
+                    <a href="https://www.linkedin.com/in/sunnyshah23/"> <img class="social"
+                            src="https://github.com/sunnyshah-23/unhwebdev/blob/main/free-github-logo-icon-6529.png?raw=true"></a>
+                    <a href="https://github.com/sunnyshah-23"> <img class="social"
+                            src="https://github.com/sunnyshah-23/unhwebdev/blob/main/free-linkedin-logo-icon-2430.png?raw=true"></a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+        const menu_items = document.querySelectorAll('nav .mainMenu li a');
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+
+        // close menu when you click on a menu item 
+        menu_items.forEach(item => {
+            item.addEventListener('click', function () {
+                close();
+            })
+        })
+
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close() {
+            mainMenu.style.top = '-100%';
+        }
+    </script>
+
+</body>
+
+</html>

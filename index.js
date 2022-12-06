@@ -11,7 +11,7 @@ const connectDB = async () => {
     try {
         // Connect to the MongoDB cluster
         await client.connect();
-        console.log(" connection happened here")
+        console.log(" connection done")
 
 
     } catch (e) {
@@ -52,6 +52,7 @@ const server = http.createServer(async (req, res) => {
         res.end(profile);
 
     }
+    //show 404 page for any other url
     else {
         fs.readFile(path.join(__dirname, 'public', '404.html'),
             (err, content) => {

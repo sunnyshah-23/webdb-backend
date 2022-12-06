@@ -9,7 +9,7 @@ const client = new MongoClient(uri);
 
 const connectDB = async () => {
     try {
-        // Connect to the MongoDB cluster
+        // Connect to MongoDB
         await client.connect();
         console.log(" connection done")
 

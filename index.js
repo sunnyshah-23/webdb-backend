@@ -42,7 +42,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     //fetch MongoDB data and send the response
-    else if (req.url === '/api') {
+    else if (req.url === '/data') {
 
         const data = client.db("dev").collection("profile").find({});
         const results = await data.toArray();

@@ -3,7 +3,7 @@
         {
             "id": 100,
             "username": "sunnyshah",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liquidplanner.com%2Fblog%2Fproject-manager-vs-program-manager%2F&psig=AOvVaw3tXQ6jPE5yhGHnZIolgaIj&ust=1668451143467000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCUnYDnq_sCFQAAAAAdAAAAABAD",
+            "image": "https://github.com/sunnyshah-23/unhwebdev/blob/main/Screenshot%202022-12-03%20at%201.19.03%20PM.png?raw=true",
             "title": "Crypto Hunter",
             "date": "7/24/22",
             "source_code_link": "https://github.com/sunnyshah-23/crypto-hunter",
@@ -17,61 +17,98 @@
         },
         {
             "id": 101,
-            "username": "rikdhedia",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liquidplanner.com%2Fblog%2Fproject-manager-vs-program-manager%2F&psig=AOvVaw3tXQ6jPE5yhGHnZIolgaIj&ust=1668451143467000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCUnYDnq_sCFQAAAAAdAAAAABAD",
-            "title": "Cryptogram",
+            "username": "brijesh",
+            "image": "https://findcoder.fra1.digitaloceanspaces.com/d2955e409231e6bbb1fa2cd88d018d9e",
+            "title": "Bill Splitter",
             "date": "8/11/20",
-            "source_code_link": "https://github.com/rikhavdedhia/cryptogram",
-            "deployed_link": "",
+            "source_code_link": "https://github.com/brijeshvadalia/Bill-Splitter-Hackathon-Project",
+            "deployed_link": "https://bill-splitter-hackathon-project-brijesh8128.vercel.app/",
             "tags": [
-                "Java",
-                "JavaFx"
+                "HTML",
+                "CSS",
+                "Node js",
+                "Reactjs",
+                "Typescript"
             ],
-            "description": "Software Project Management using Java and JavaFX"
+            "description": "The frequent issues users have with sharing among themselves gave rise to the idea for creating this application.  "
         },
         {
             "id": 102,
-            "username": "dv",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liquidplanner.com%2Fblog%2Fproject-manager-vs-program-manager%2F&psig=AOvVaw3tXQ6jPE5yhGHnZIolgaIj&ust=1668451143467000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCUnYDnq_sCFQAAAAAdAAAAABAD",
-            "title": "Training Program",
+            "username": "Jay",
+            "image": "https://findcoder.fra1.digitaloceanspaces.com/45c49327e5f4a7c74f19b5f80e4ee375",
+            "title": "Bake Heaven",
             "date": "7/24/19",
-            "source_code_link": "https://github.com/deepvira14/TrainingProgram",
-            "deployed_link": "",
+            "source_code_link": "https://github.com/Vancey567/baketion-full",
+            "deployed_link": "https://github.com/Vancey567/baketion-full",
             "tags": [
-                "javascript",
-                "PHP"
+                "HTML",
+                "Javascript",
+                "Node",
+                "SCSS",
+                "Express"
             ],
-            "description": "A training program"
+            "description": "Functionalities are SignUp, Login, Add To Cart, order and Realtime order tracking using Socketio, Categories of products, Admin Dashboard, Contact Seller using e-mail"
         },
         {
             "id": 103,
-            "username": "dparikh",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liquidplanner.com%2Fblog%2Fproject-manager-vs-program-manager%2F&psig=AOvVaw3tXQ6jPE5yhGHnZIolgaIj&ust=1668451143467000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCUnYDnq_sCFQAAAAAdAAAAABAD",
-            "title": "Browser",
+            "username": "Shubham",
+            "image": "https://findcoder.fra1.digitaloceanspaces.com/62d0eb0ea97dd2c5c9f32bc6/projects/62d0eb0ea97dd2c5c9f32bc61664102231265.jpeg",
+            "title": "Cab Price Finder",
             "date": "11/18/21",
             "source_code_link": "https://github.com/beakerbrowser/beaker",
-            "deployed_link": "https://beakerbrowser.com/",
+            "deployed_link": "https://newcabby.netlify.app/",
             "tags": [
                 "Javascript",
                 "HTML",
-                "CSS"
+                "CSS",
+                "Google map API"
             ],
-            "description": "A cryptocurrency app where users can see the current price of all the cry"
+            "description": "Pickup and Drop location Autocomplete & Suggestion (GoogleMap Places API)User can choose his/her current location as a pickup location (Geolocation API)."
         },
         {
             "id": 104,
-            "username": "dparikh",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liquidplanner.com%2Fblog%2Fproject-manager-vs-program-manager%2F&psig=AOvVaw3tXQ6jPE5yhGHnZIolgaIj&ust=1668451143467000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCUnYDnq_sCFQAAAAAdAAAAABAD",
-            "title": "Browser",
+            "username": "Sampat Sharma",
+            "image": "https://findcoder.fra1.digitaloceanspaces.com/77dd98c8e55160ddbdc6bc368a30c345",
+            "title": "Split Kar",
             "date": "11/18/21",
-            "source_code_link": "https://github.com/beakerbrowser/beaker",
-            "deployed_link": "https://beakerbrowser.com/",
+            "source_code_link": "https://github.com/sampatsharma143/Split-Kar-hackathon",
+            "deployed_link": "https://drive.google.com/file/d/1q4zcwvga6xCs1Zm3UuqUvUraUt9JwBRc/view",
             "tags": [
-                "Javascript",
-                "HTML",
-                "CSS"
+                "Android",
+                "Serverless",
+                "Java"
             ],
-            "description": "A cryptocurrency app where users can see the current price of all the cry"
+            "description": "Split your trip, food, and travel bills among your friends easily."
+        },
+        {
+            "id": 105,
+            "username": "Ashutosh",
+            "image": "https://findcoder.fra1.digitaloceanspaces.com/7eeec96d5540a04d22a9f08b50103d0c",
+            "title": "Paytm clone",
+            "date": "11/18/21",
+            "source_code_link": "https://github.com/ashutoshtiwari199/paytm-clone/blob/main/index.html",
+            "deployed_link": "https://paytm-web-clone.netlify.app/",
+            "tags": [
+                "HTML",
+                "CSS",
+                "Tailwind"
+            ],
+            "description": "I have created the Paytm.com clone by using Tailwind css. This is mobile responsive web page. "
+        },
+        {
+            "id": 106,
+            "username": "Rohit",
+            "image": "https://findcoder.fra1.digitaloceanspaces.com/108e774c673aaf629c93d0f35543ef61",
+            "title": "Link Preview Generator",
+            "date": "11/18/21",
+            "source_code_link": "https://github.com/rohitdhas/link-preview-generator",
+            "deployed_link": "https://link-preview-generator.vercel.app/",
+            "tags": [
+                "Nextjs",
+                "Tailwind",
+                "Reactjs"
+            ],
+            "description": "Link preview generator is a tool to genearte beautiful link previews. It is built with Next JS and Styled with Tailwind CSS. Also I have used a UI component library called Prime React in this project. And the application is deployed to Vercel. "
         }
     ]
 }

@@ -26,7 +26,7 @@ const server = http.createServer(async (req, res) => {
     const headers = {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
-        'Content-Type': 'applicaiton/json'
+
     };
 
     if (req.url === '/') {
@@ -42,7 +42,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     //fetch MongoDB data and send the response
-    else if (req.url === '/data') {
+    else if (req.url === '/api') {
 
         const data = client.db("dev").collection("profile").find({});
         const results = await data.toArray();

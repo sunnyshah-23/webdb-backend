@@ -52,16 +52,16 @@ const server = http.createServer(async (req, res) => {
         res.end(profile);
 
     }
-    else {
-        fs.readFile(path.join(__dirname, 'public', '404.html'),
-            (err, content) => {
+    // else {
+    //     fs.readFile(path.join(__dirname, 'public', '404.html'),
+    //         (err, content) => {
 
-                if (err) throw err;
-                res.writeHead(200, { 'Content-Type': 'text/html' });
-                res.end(content);
-            }
-        );
-    }
+    //             if (err) throw err;
+    //             res.writeHead(200, { 'Content-Type': 'text/html' });
+    //             res.end(content);
+    //         }
+    //     );
+    // }
 });
 
 const PORT = process.env.PORT || 9000;
